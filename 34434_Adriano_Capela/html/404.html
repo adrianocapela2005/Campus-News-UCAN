@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Página não encontrada</title>
+    <link rel="stylesheet" href="../css/404.css">
+</head>
+<body>
+
+    <!-- Tela de carregamento -->
+    <div class="tela-carregamento" id="telaCarregamento">
+        <div class="carregador">
+            <div class="carregador-logo">UCAN</div>
+            <div class="carregador-barra"></div>
+            <p>A carregar...</p>
+        </div>
+    </div>
+
+    <!-- Conteudo principal -->
+    <div class="conteudo-site" id="conteudoSite" style="display: none;">
+
+        <!-- Conteudo de erro - ocupa toda a tela -->
+        <div class="erro-container">
+            <div class="erro-conteudo">
+                <div class="erro-icone">🔍</div>
+                <h1 class="erro-codigo">404</h1>
+                <h2 class="erro-titulo">Página não encontrada</h2>
+                <p class="erro-texto">
+                    Não conseguimos encontrar a página que procura. 
+                    Pode ter sido removida, renomeada ou está temporariamente indisponível.
+                </p>
+
+                <div class="erro-botoes">
+                    <a href="inicio.html" class="botao-voltar">🏠 Ir para página inicial</a>
+                    <a href="#" onclick="history.back(); return false;" class="botao-voltar secundario">↩️ Voltar à página anterior</a>
+                </div>
+
+                <div class="erro-links">
+                    <p>Ou pode visitar uma das nossas páginas principais:</p>
+                    <div class="links-rapidos">
+                        <a href="Noticias.html">Notícias</a>
+                        <a href="Evento.html">Eventos</a>
+                        <a href="Galeria.html">Galeria</a>
+                        <a href="Sobre.html">Sobre Nós</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../js/404.js"></script>
+</body>
+</html>

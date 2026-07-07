@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Campus News UCAN</title>
+    <link rel="stylesheet" href="../css/Galeria.css">
+</head>
+<body>
+
+    <!-- Tela de carregamento -->
+    <div class="tela-carregamento" id="telaCarregamento">
+        <div class="carregador">
+            <div class="carregador-logo">UCAN</div>
+            <div class="carregador-barra"></div>
+            <p>A carregar...</p>
+        </div>
+    </div>
+
+    <!-- Conteudo principal -->
+    <div class="conteudo-site" id="conteudoSite" style="display: none;">
+
+        <!-- Cabecalho -->
+        <header class="cabecalho">
+            <div class="container cabecalho-conteudo">
+                <div class="logo">
+                    <img src="../img/logo_UCAN.jpg" alt="Logo UCAN">
+                    <div class="logo-texto">
+                        <span class="logo-pequeno">CAMPUS NEWS</span>
+                        <span class="logo-grande">UCAN</span>
+                    </div>
+                </div>
+
+                <!-- Botao modo escuro -->
+                <button class="botao-escuro" id="botaoEscuro" aria-label="Modo escuro">🌙</button>
+
+                <button class="menu-hamburguer" id="menuHamburguer">☰</button>
+
+                <!-- Navegacao -->
+                <nav class="navegacao" id="menuNav">
+                    <ul>
+                        <li><a href="inicio.html"> início</a></li>
+                        <li><a href="Noticias.html"> Notícias</a></li>
+                        <li><a href="Evento.html"> Eventos</a></li>
+                        <li><a href="404.html"> Blog</a></li>
+                        <li><a href="Galeria.html"> Galeria</a></li>
+                        <li><a href="Sobre.html"> Sobre Nós</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Banner principal -->
+        <section class="banner-principal">
+            <div class="container banner-conteudo">
+                <h1>🖼️ Galeria de Fotos</h1>
+                <p>Momentos, eventos e actividades da universidade</p>
+            </div>
+        </section>
+
+        <!-- Filtros -->
+        <section class="filtros">
+            <button class="filtro-btn ativo" data-filtro="todos">📌 Todos</button>
+            <button class="filtro-btn" data-filtro="eventos">🎉 Eventos</button>
+            <button class="filtro-btn" data-filtro="academico">🎓 Académico</button>
+            <button class="filtro-btn" data-filtro="cultura">🎭 Cultura</button>
+            <button class="filtro-btn" data-filtro="cerimonia">🎓 Cerimónia</button>
+            <button class="filtro-btn" data-filtro="internacional">🌍 Internacional</button>
+        </section>
+
+        <!-- Galeria -->
+        <section class="galeria">
+            <div class="container grade-galeria" id="gradeGaleria">
+
+                <!-- Card 1 - Outorga de Diplomas -->
+                <div class="card-galeria" data-categoria="cerimonia">
+                    <div class="imagem-galeria">
+                        <img src="../img/Ortoga0.jpg" alt="Outorga de Diplomas">
+                        <span class="galeria-tag">🎓 Cerimónia</span>
+                    </div>
+                    <div class="conteudo-galeria">
+                        <h3>UNIVERSIDADE CATÓLICA DE ANGOLA OUTORGA DIPLOMAS</h3>
+                        <a href="galeria0.html" class="btn-ver">Ver →</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 - Visita TPA -->
+                <div class="card-galeria" data-categoria="academico">
+                    <div class="imagem-galeria">
+                        <img src="../img/TPA0.jpg" alt="Visita TPA">
+                        <span class="galeria-tag">🎓 Académico</span>
+                    </div>
+                    <div class="conteudo-galeria">
+                        <h3>FACULDADE DE CIÊNCIAS HUMANAS REALIZA VISITA ACADÉMICA À TPA</h3>
+                        <a href="galeria1.html" class="btn-ver">Ver →</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 - Fair Tech -->
+                <div class="card-galeria" data-categoria="eventos">
+                    <div class="imagem-galeria">
+                        <img src="../img/FairTech.jpg" alt="Fair Tech">
+                        <span class="galeria-tag">🎉 Eventos</span>
+                    </div>
+                    <div class="conteudo-galeria">
+                        <h3>UCAN FAIR TECH FEIRA DE TECNOLOGIA</h3>
+                        <a href="galeria2.html" class="btn-ver">Ver →</a>
+                    </div>
+                </div>
+
+                <!-- Card 4 - Protocolo ARC -->
+                <div class="card-galeria" data-categoria="cerimonia">
+                    <div class="imagem-galeria">
+                        <img src="../img/Acordo.jpg" alt="Protocolo ARC">
+                        <span class="galeria-tag">🤝 Cooperação</span>
+                    </div>
+                    <div class="conteudo-galeria">
+                        <h3>UNIVERSIDADE CATÓLICA DE ANGOLA REALIZA CERIMÓNIA DE ASSINATURA DO PROTOCOLO DE COOPERAÇÃO ENTRE ARC E UCAN</h3>
+                        <a href="galeria3.html" class="btn-ver">Ver →</a>
+                    </div>
+                </div>
+
+                <!-- Card 5 - Visita Reitor Polónia -->
+                <div class="card-galeria" data-categoria="internacional">
+                    <div class="imagem-galeria">
+                        <img src="../img/Reitor.jpg" alt="Visita Reitor Polónia">
+                        <span class="galeria-tag">🌍 Internacional</span>
+                    </div>
+                    <div class="conteudo-galeria">
+                        <h3>UNIVERSIDADE CATÓLICA DE ANGOLA RECEBE REITOR DA JOHN PAUL II CATHOLIC UNIVERSITY OF LUBLIN DA POLÓNIA</h3>
+                        <a href="galeria4.html" class="btn-ver">Ver →</a>
+                    </div>
+                </div>
+
+                <!-- Card 6 - Open Day Biblioteca -->
+                <div class="card-galeria" data-categoria="academico">
+                    <div class="imagem-galeria">
+                        <img src="../img/BiBlioteca UCAN.jpeg" alt="Open Day Biblioteca">
+                        <span class="galeria-tag">📚 Biblioteca</span>
+                    </div>
+                    <div class="conteudo-galeria">
+                        <h3>BIBLIOTECA DA UCAN PROMOVE 5.ª EDIÇÃO DO OPEN DAY</h3>
+                        <a href="galeria5.html" class="btn-ver">Ver →</a>
+                    </div>
+                </div>
+
+                <!-- Card 7 - Pastoral Dia de África -->
+                <div class="card-galeria" data-categoria="cultura">
+                    <div class="imagem-galeria">
+                        <img src="../img/Pastoral Universitario.jpeg" alt="Pastoral Dia de África">
+                        <span class="galeria-tag">🎭 Cultura</span>
+                    </div>
+                    <div class="conteudo-galeria">
+                        <h3>UCAN | PASTORAL UNIVERSITÁRIA - DIA DE ÁFRICA NA UNIVERSIDADE CATÓLICA DE ANGOLA</h3>
+                        <a href="galeria6.html" class="btn-ver">Ver →</a>
+                    </div>
+                </div>
+
+                <!-- Card 8 - Prémio Tigra -->
+                <div class="card-galeria" data-categoria="academico">
+                    <div class="imagem-galeria">
+                        <img src="../img/Premios.jpeg" alt="Prémio Tigra">
+                        <span class="galeria-tag">🏅 Prémios</span>
+                    </div>
+                    <div class="conteudo-galeria">
+                        <h3>ESTUDANTE DA UCAN DISTINGUIDA COM O PRÉMIO TIGRA NOVA GARRA NA CATEGORIA SAÚDE</h3>
+                        <a href="galeria7.html" class="btn-ver">Ver →</a>
+                    </div>
+                </div>
+
+                <!-- Card 9 - Preparação Finalistas -->
+                <div class="card-galeria" data-categoria="academico">
+                    <div class="imagem-galeria">
+                        <img src="../img/Preparação Integral dos Finalistas.jpeg" alt="Preparação Finalistas">
+                        <span class="galeria-tag">🎓 Académico</span>
+                    </div>
+                    <div class="conteudo-galeria">
+                        <h3>UNIVERSIDADE CATÓLICA DE ANGOLA REFORÇA PREPARAÇÃO INTEGRAL DOS FINALISTAS</h3>
+                        <a href="galeria8.html" class="btn-ver">Ver →</a>
+                    </div>
+                </div>
+
+                <!-- Card 10 - Centro Direitos Humanos -->
+                <div class="card-galeria" data-categoria="academico">
+                    <div class="imagem-galeria">
+                        <img src="../img/Centro de Direitos Humanos.jpeg" alt="Centro Direitos Humanos">
+                        <span class="galeria-tag">⚖️ Direitos</span>
+                    </div>
+                    <div class="conteudo-galeria">
+                        <h3>CENTRO DE DIREITOS HUMANOS E CIDADANIA DA FACULDADE DE DIREITO DA UNIVERSIDADE CATÓLICA DE ANGOLA</h3>
+                        <a href="galeria9.html" class="btn-ver">Ver →</a>
+                    </div>
+                </div>
+
+                <!-- Card 11 - Desfile Académico -->
+                <div class="card-galeria" data-categoria="eventos">
+                    <div class="imagem-galeria">
+                        <img src="../img/Desfile Académico.jpeg" alt="Desfile Académico">
+                        <span class="galeria-tag">🎭 Cultura</span>
+                    </div>
+                    <div class="conteudo-galeria">
+                        <h3>UNIVERSIDADE CATÓLICA DE ANGOLA REALIZA COM SUCESSO A 23.ª EDIÇÃO DO DESFILE ACADÉMICO</h3>
+                        <a href="galeria10.html" class="btn-ver">Ver →</a>
+                    </div>
+                </div>
+
+                <!-- Card 12 - Encerramento Ano Académico -->
+                <div class="card-galeria" data-categoria="cerimonia">
+                    <div class="imagem-galeria">
+                        <img src="../img/Encerramento do Ano Académico.jpeg" alt="Encerramento Ano Académico">
+                        <span class="galeria-tag">🎓 Cerimónia</span>
+                    </div>
+                    <div class="conteudo-galeria">
+                        <h3>UCAN | ENCERRAMENTO DO ANO ACADÉMICO 2025-2026</h3>
+                        <a href="galeria11.html" class="btn-ver">Ver →</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter-principal">
+            <div class="container newsletter-conteudo">
+                <p>📧 Receba as nossas notícias</p>
+                <input type="email" placeholder="O seu email (@gmail.com)" id="emailNewsletter">
+                <button id="botaoSubscrever">Subscrever</button>
+            </div>
+        </section>
+
+        <!-- Rodape -->
+        <footer class="rodape">
+            <div class="container rodape-conteudo">
+                <div class="logo-rodape">
+                    <img src="../img/logo_UCAN.jpg" alt="Logo UCAN">
+                    <span>UCAN</span>
+                </div>
+
+                <div class="links-rodape">
+                    <a href="Faq.html">❓ FAQ</a>
+                    <a href="Politica.html">📜 Política</a>
+                    <a href="Termos.html">⚖️ Termos</a>
+                    <a href="MapaSite.html">🗺️ Mapa do Site</a>
+                    <a href="Contactos.html">📞 Contactos</a>
+                </div>
+
+                <div class="redes-sociais">
+                    <a href="https://web.facebook.com/"><img src="../img/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/univ_catolica_de_angola/"><img src="../img/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/feed/"><img src="../img/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+            <div class="rodape-base">
+                <p>&copy; 2026 Campus News UCAN. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+    <button class="botao-topo" id="botaoTopo">↑</button>
+
+    <script src="../js/Galeria.js"></script>
+</body>
+</html>

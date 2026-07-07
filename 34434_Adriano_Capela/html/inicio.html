@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus News UCAN</title>
+    <link rel="stylesheet" href="../css/inicio.css">
+</head>
+<body>
+
+    <!-- Tela de Carregamento -->
+    <div class="tela-carregamento" id="telaCarregamento">
+        <div class="carregador">
+            <div class="carregador-logo">UCAN</div>
+            <div class="carregador-barra"></div>
+            <p>A carregar...</p>
+        </div>
+    </div>
+
+    <!-- Conteudo principal -->
+    <div class="conteudo-site" id="conteudoSite" style="display: none;">
+        
+        <!-- Cabeçalho -->
+        <header class="cabecalho">
+            <div class="container cabecalho-conteudo">
+                <div class="logo">
+                    <img src="../img/logo_UCAN.jpg" alt="Logo UCAN">
+                    <div class="logo-texto">
+                        <span class="logo-pequeno">CAMPUS NEWS</span>
+                        <span class="logo-grande">UCAN</span>
+                    </div>
+                </div>
+
+                <!-- Botão Modo Escuro -->
+                <button class="botao-escuro" id="botaoEscuro" aria-label="Modo escuro">🌙</button>
+
+                <button class="menu-hamburguer" id="menuHamburguer">☰</button>
+
+                <!-- Navegação -->
+                <nav class="navegacao" id="menuNav">
+                    <ul>
+                        <li><a href="inicio.html"> início</a></li>
+                        <li><a href="Noticias.html"> Notícias</a></li>
+                        <li><a href="Evento.html"> Eventos</a></li>
+                        <li><a href="404.html"> Blog</a></li>
+                        <li><a href="Galeria.html"> Galeria</a></li>
+                        <li><a href="Sobre.html"> Sobre Nós</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <!-- Banner Principal com Imagens Automaticas -->
+        <section class="banner-principal" id="bannerPrincipal">
+            <div class="sobreposicao" id="sobreposicaoBanner">
+                <div class="container banner-conteudo">
+                    <h1 class="texto-digitando"></h1>
+                    <p>Fique por dentro das últimas notícias, eventos e novidades da universidade.</p>
+                    
+                    <a href="Noticias.html">
+                        <button class="botao-explorar">Explorar Notícias ↓</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Numeros da UCAN -->
+        <section class="numeros-ucan">
+            <div class="container">
+                <div class="numeros-grade">
+                    <div class="numero-cartao">
+                        <div class="numero-icone">📚</div>
+                        <div class="numero-valor" data-alvo="27">0</div>
+                        <div class="numero-rotulo">Anos de Excelência</div>
+                    </div>
+                    <div class="numero-cartao">
+                        <div class="numero-icone">🎓</div>
+                        <div class="numero-valor" data-alvo="10">0</div>
+                        <div class="numero-rotulo">Cursos</div>
+                    </div>
+                    <div class="numero-cartao">
+                        <div class="numero-icone">👨‍🎓</div>
+                        <div class="numero-valor" data-alvo="8000">0</div>
+                        <div class="numero-rotulo">Alunos</div>
+                    </div>
+                    <div class="numero-cartao">
+                        <div class="numero-icone">👩‍🏫</div>
+                        <div class="numero-valor" data-alvo="50">0</div>
+                        <div class="numero-rotulo">Docentes</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner Destaque (Slider) -->
+        <section class="banner-destaque">
+            <div class="container banner-conteudo-slider" id="sliderContainer">
+                <div class="banner-imagem">
+                    <img id="slideImagem" src="../img/Encerramento do Ano Académico.jpeg" alt="Notícia em destaque">
+                </div>
+                <div class="banner-texto">
+                    <span class="etiqueta" id="slideEtiqueta">🎓 NOTÍCIA EM DESTAQUE</span>
+                    <h1 id="slideTitulo">
+                        UCAN | ENCERRAMENTO DO ANO ACADÉMICO 2025-2026
+                    </h1>
+                    <p id="slideTexto">
+                        A Universidade Católica de Angola (UCAN) realizou, neste sábado, 27 de Junho de 2026, pelas 9h00, a cerimónia de Encerramento do Ano Académico 2025/2026. 
+                        Um momento de profunda comunhão, gratidão e reconhecimento da excelência académica, científica, desportiva e humana da comunidade universitária.
+                    </p>
+                    <a id="slideBotao" href="noticia14.html" class="botao">Ler mais →</a>
+                </div>
+            </div>
+
+            <div class="banner-pontos" id="bannerPontos">
+                <span class="ponto ativo" data-index="0"></span>
+                <span class="ponto" data-index="1"></span>
+                <span class="ponto" data-index="2"></span>
+            </div>
+        </section>
+
+        <!-- Noticias -->
+        <section class="noticias">
+            <div class="container">
+                <div class="cabecalho-secao">
+                    <h2>📰 ÚLTIMAS NOTÍCIAS</h2>
+                    <a href="Noticias.html">Ver todas →</a>
+                </div>
+
+                <div class="noticias-grade">
+
+                    <div class="cartao">
+                        <div class="cartao-imagem">
+                            <img src="../img/Intercâmbio Universitario.jpeg" alt="">
+                        </div>
+                        <div class="cartao-conteudo">
+                            <h3>UNIVERSIDADE CATÓLICA PARTICIPA NO 1º FÓRUM DE REITORES BRASIL-ÁFRICA</h3>
+                            <p>A Universidade Católica de Angola participa, de 25 a 27 de Maio de 2026, do 1.º Fórum de Reitores Brasil-África, que decorre no Centro Internacional...</p>
+                            <a href="noticia10.html">Ler mais →</a>
+                        </div>
+                    </div>
+
+                    <div class="cartao">
+                        <div class="cartao-imagem">
+                            <img src="../img/Gestão de Pessoas 360º.jpeg" alt="">
+                        </div>
+                        <div class="cartao-conteudo">
+                            <h3>FACULDADE DE CIÊNCIAS HUMANAS | PÓS-GRADUAÇÃO EM GESTÃO DE PESSOAS 360º</h3>
+                            <p>A Coordenação da Pós-Graduação Profissional em Gestão de Pessoas 360°, da Faculdade de Ciências Humanas da Universidade Católica de Angola...</p>
+                            <a href="noticia8.html">Ler mais →</a>
+                        </div>
+                    </div>
+
+
+                    <div class="cartao">
+                        <div class="cartao-imagem">
+                            <img src="../img/TPA0.jpg" alt="TPA">
+                        </div>
+                        <div class="cartao-conteudo">
+                            <h3>FACULDADE DE CIÊNCIAS HUMANAS REALIZA VISITA ACADÉMICA À TPA</h3>
+                            <p>A Faculdade de Ciências Humanas da UCAN realizou uma visita académica à Televisão Pública de Angola (TPA)...</p>
+                            <a href="noticia0.html">Ler mais →</a>
+                        </div>
+                    </div>
+
+                    <div class="cartao">
+                        <div class="cartao-imagem">
+                            <img src="../img/Homenagem0.jpg" alt="Homenagem">
+                        </div>
+                        <div class="cartao-conteudo">
+                            <h3>UCAN | CERIMÓNIA DE HOMENAGEM</h3>
+                            <p>Cerimónia de Homenagem ao Doutor Bornito de Sousa Baltazar Diogo no Edifício Michael L. Kennedy...</p>
+                            <a href="noticia2.html">Ler mais →</a>
+                        </div>
+                    </div>
+
+                    <div class="cartao">
+                        <div class="cartao-imagem">
+                            <img src="../img/Acordo.jpg" alt="Acordo">
+                        </div>
+                        <div class="cartao-conteudo">
+                            <h3>PROTOCOLO DE COOPERAÇÃO ENTRE UCAN E ARC</h3>
+                            <p>UCAN e Autoridade Reguladora da Concorrência formalizaram importante Protocolo de Cooperação...</p>
+                            <a href="noticia3.html">Ler mais →</a>
+                        </div>
+                    </div>
+
+                    <div class="cartao">
+                        <div class="cartao-imagem">
+                            <img src="../img/Reitor.jpg" alt="Reitor">
+                        </div>
+                        <div class="cartao-conteudo">
+                            <h3>UCAN RECEBE REITOR DA UNIVERSIDADE DA POLÓNIA</h3>
+                            <p>Visita oficial do Magnífico Reitor da John Paul II Catholic University of Lublin...</p>
+                            <a href="noticia4.html">Ler mais →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Eventos -->
+        <section class="eventos">
+            <div class="container">
+                <div class="cabecalho-secao">
+                    <h2>📅 EVENTOS</h2>
+                    <a href="Evento.html">Ver todos →</a>
+                </div>
+
+                <div class="evento">
+                    <img src="../img/Feira_Empregabilidade.jpg" alt="Feira de Empregabilidade">
+                    <div>
+                        <h3>💼 Feira de Empregabilidade da UCAN</h3>
+                        <p>A Feira de Empregabilidade da UCAN é onde a preparação encontra oportunidades reais que mudam destinos. Empresas procuram talentos.</p>
+                        <span class="evento-data">📅 15 de Junho, 2026</span>
+                    </div>
+                </div>
+
+                <div class="evento">
+                    <img src="../img/DA.jpg" alt="Desfile Académico">
+                    <div>
+                        <h3>🎭 DESFILE ACADÉMICO — 23ª EDIÇÃO</h3>
+                        <h4>🔥 "Batalha de Titãs" 🔥</h4>
+                        <p>A tradição volta a ganhar vida nas ruas da cidade. No dia 20 de Junho, às 09 horas, o Largo da Mutamba será palco de um dos momentos mais emblemáticos da vivência académica.</p>
+                        <span class="evento-data">📅 20 de Junho, 2026</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Depoimentos -->
+        <section class="depoimentos">
+            <div class="container">
+                <div class="cabecalho-secao">
+                    <h2>💬 DEPOIMENTOS</h2>
+                </div>
+
+                <div class="depoimentos-grade">
+                    <div class="depoimento">
+                        <p>"Excelente universidade, ensino de qualidade e professores dedicados."</p>
+                        <h4>Ana Paula</h4>
+                        <span>🎓 Aluna de Direito</span>
+                    </div>
+
+                    <div class="depoimento">
+                        <p>"Ambiente académico muito bom e infraestrutura de primeira linha."</p>
+                        <h4>João Miguel</h4>
+                        <span>🎓 Aluno de Engenharia</span>
+                    </div>
+
+                    <div class="depoimento">
+                        <p>"Ótima experiência de aprendizagem e networking profissional."</p>
+                        <h4>Maria Cardoso</h4>
+                        <span>🎓 Aluna de Economia</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter">
+            <div class="container newsletter-conteudo">
+                <p>📧 Receba as nossas notícias</p>
+                <input type="email" placeholder="O seu email (@gmail.com)" id="emailNewsletter">
+                <button id="botaoSubscrever">Subscrever</button>
+            </div>
+        </section>
+
+        <!-- Rodape -->
+        <footer class="rodape">
+            <div class="container rodape-conteudo">
+                <!-- Logo lado esquerdo -->
+                <div class="logo-rodape">
+                    <img src="../img/logo_UCAN.jpg" alt="Logo UCAN">
+                    <span>UCAN</span>
+                </div>
+
+                <div class="links-rodape">
+                    <a href="Faq.html">❓ FAQ</a>
+                    <a href="Politica.html">📜 Política</a>
+                    <a href="Termos.html">⚖️ Termos</a>
+                    <a href="MapaSite.html">🗺️ Mapa do Site</a>
+                    <a href="Contactos.html">📞 Contactos</a>
+                </div>
+
+                <div class="redes-sociais">
+                    <a href="https://web.facebook.com/"><img src="../img/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/univ_catolica_de_angola/"><img src="../img/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/feed/"><img src="../img/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+
+            <div class="rodape-base">
+                <p>&copy; 2026 Campus News UCAN. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../js/inicio.js"></script>
+</body>
+</html>

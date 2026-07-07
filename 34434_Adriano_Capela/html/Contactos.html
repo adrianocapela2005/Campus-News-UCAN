@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos - Campus News UCAN</title>
+    <link rel="stylesheet" href="../css/Contactos.css">
+</head>
+<body>
+
+    <!-- Tela de carregamento -->
+    <div class="tela-carregamento" id="telaCarregamento">
+        <div class="carregador">
+            <div class="carregador-logo">UCAN</div>
+            <div class="carregador-barra"></div>
+            <p>A carregar...</p>
+        </div>
+    </div>
+
+    <!-- Conteudo principal -->
+    <div class="conteudo-site" id="conteudoSite" style="display: none;">
+
+        <!-- Cabecalho -->
+        <header class="cabecalho">
+            <div class="container cabecalho-conteudo">
+                <div class="logo">
+                    <img src="../img/logo_UCAN.jpg" alt="Logo UCAN">
+                    <div class="logo-texto">
+                        <span class="logo-pequeno">CAMPUS NEWS</span>
+                        <span class="logo-grande">UCAN</span>
+                    </div>
+                </div>
+
+                <!-- Botao modo escuro -->
+                <button class="botao-escuro" id="botaoEscuro" aria-label="Modo escuro">🌙</button>
+
+                <button class="menu-hamburguer" id="menuHamburguer">☰</button>
+
+                <!-- Navegacao -->
+                <nav class="navegacao" id="menuNav">
+                    <ul>
+                        <li><a href="inicio.html"> início</a></li>
+                        <li><a href="Noticias.html"> Notícias</a></li>
+                        <li><a href="Evento.html"> Eventos</a></li>
+                        <li><a href="404.html"> Blog</a></li>
+                        <li><a href="Galeria.html"> Galeria</a></li>
+                        <li><a href="Sobre.html"> Sobre Nós</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Banner principal -->
+        <section class="banner-principal">
+            <div class="container banner-conteudo">
+                <h1>📞 Contactos</h1>
+                <p>Entre em contacto connosco</p>
+            </div>
+        </section>
+
+        <!-- Conteudo principal -->
+        <section class="contactos">
+            <div class="container grid-contactos">
+
+                <!-- Formulario -->
+                <div class="formulario">
+                    <h2>📝 Envie-nos uma mensagem</h2>
+                    <p>Preencha o formulário abaixo e entraremos em contacto consigo o mais breve possível.</p>
+
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="O seu nome completo">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="seuemail@gmail.com">
+
+                    <label for="assunto">Assunto</label>
+                    <input type="text" id="assunto" placeholder="Assunto da mensagem">
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" placeholder="Escreva a sua mensagem..."></textarea>
+
+                    <button id="btnEnviar">Enviar Mensagem</button>
+                </div>
+
+                <!-- Informacoes -->
+                <div class="info">
+                    <h2>📍 Informações de Contacto</h2>
+
+                    <div class="item">
+                        <span>📍</span>
+                        <div>
+                            <strong>Endereço:</strong>
+                            <p>Rua Polo Palanca, Luanda, Angola</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <span>📞</span>
+                        <div>
+                            <strong>Telefone:</strong>
+                            <p>(+244) 222 010 916</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <span>✉️</span>
+                        <div>
+                            <strong>Email:</strong>
+                            <p>contacto@ucan.co.ao</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <span>⏰</span>
+                        <div>
+                            <strong>Horário:</strong>
+                            <p>Segunda a Sexta: 08h00 - 17h00</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <span>🌐</span>
+                        <div>
+                            <strong>Redes Sociais:</strong>
+                            <p>Siga-nos no Facebook, Instagram e LinkedIn</p>
+                        </div>
+                    </div>
+
+                    <div class="mapa">
+                        <p>📍 <strong>Localização:</strong> Rua Polo Palanca, Luanda, Angola</p>
+                        <p style="font-size:13px; color:var(--texto-claro);">(Mapa interativo disponível em breve)</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter-principal">
+            <div class="container newsletter-conteudo">
+                <p>📧 Receba as nossas notícias</p>
+                <input type="email" placeholder="O seu email (@gmail.com)" id="emailNewsletter">
+                <button id="botaoSubscrever">Subscrever</button>
+            </div>
+        </section>
+
+        <!-- Rodape -->
+        <footer class="rodape">
+            <div class="container rodape-conteudo">
+                <div class="logo-rodape">
+                    <img src="../img/logo_UCAN.jpg" alt="Logo UCAN">
+                    <span>UCAN</span>
+                </div>
+
+                <div class="links-rodape">
+                    <a href="Faq.html">❓ FAQ</a>
+                    <a href="Politica.html">📜 Política</a>
+                    <a href="Termos.html">⚖️ Termos</a>
+                    <a href="MapaSite.html">🗺️ Mapa do Site</a>
+                    <a href="Contactos.html">📞 Contactos</a>
+                </div>
+
+                <div class="redes-sociais">
+                    <a href="https://web.facebook.com/"><img src="../img/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/univ_catolica_de_angola/"><img src="../img/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/feed/"><img src="../img/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+            <div class="rodape-base">
+                <p>&copy; 2026 Campus News UCAN. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+    <button class="botao-topo" id="botaoTopo">↑</button>
+
+    <script src="../js/Contactos.js"></script>
+</body>
+</html>

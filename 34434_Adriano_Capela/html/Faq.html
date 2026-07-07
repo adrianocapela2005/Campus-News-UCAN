@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Campus News UCAN</title>
+    <link rel="stylesheet" href="../css/faq.css">
+</head>
+<body>
+
+    <!-- Tela de carregamento -->
+    <div class="tela-carregamento" id="telaCarregamento">
+        <div class="carregador">
+            <div class="carregador-logo">UCAN</div>
+            <div class="carregador-barra"></div>
+            <p>A carregar...</p>
+        </div>
+    </div>
+
+    <!-- Conteudo principal -->
+    <div class="conteudo-site" id="conteudoSite" style="display: none;">
+
+        <!-- Cabecalho -->
+        <header class="cabecalho">
+            <div class="container cabecalho-conteudo">
+                <div class="logo">
+                    <img src="../img/logo_UCAN.jpg" alt="Logo UCAN">
+                    <div class="logo-texto">
+                        <span class="logo-pequeno">CAMPUS NEWS</span>
+                        <span class="logo-grande">UCAN</span>
+                    </div>
+                </div>
+
+                <!-- Botao modo escuro -->
+                <button class="botao-escuro" id="botaoEscuro" aria-label="Modo escuro">🌙</button>
+
+                <button class="menu-hamburguer" id="menuHamburguer">☰</button>
+
+                <!-- Navegacao -->
+                <nav class="navegacao" id="menuNav">
+                    <ul>
+                        <li><a href="inicio.html"> início</a></li>
+                        <li><a href="Noticias.html"> Notícias</a></li>
+                        <li><a href="Evento.html"> Eventos</a></li>
+                        <li><a href="404.html"> Blog</a></li>
+                        <li><a href="Galeria.html"> Galeria</a></li>
+                        <li><a href="Sobre.html"> Sobre Nós</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Banner principal -->
+        <section class="banner-principal">
+            <div class="container banner-conteudo">
+                <h1>❓ Perguntas Frequentes</h1>
+                <p>Tire suas dúvidas sobre o Campus News UCAN</p>
+            </div>
+        </section>
+
+        <!-- Conteudo principal -->
+        <main class="conteudo-principal">
+            <div class="container layout">
+
+                <!-- FAQ -->
+                <section class="secao-faq">
+
+                    <h2>Dúvidas comuns</h2>
+
+                    <details class="item-faq">
+                        <summary>📝 Como publicar um artigo?</summary>
+                        <p>Envie a sua proposta para <strong>artigos@campusnews.ucan.edu</strong> com título e resumo. A nossa equipa irá analisar e dar feedback dentro de 5 dias úteis.</p>
+                    </details>
+
+                    <details class="item-faq">
+                        <summary>🎉 Como participar nos eventos?</summary>
+                        <p>Acesse a página de eventos e faça a inscrição conforme indicado. As inscrições são gratuitas e abertas a toda a comunidade académica.</p>
+                    </details>
+
+                    <details class="item-faq">
+                        <summary>📧 Como contactar a equipa?</summary>
+                        <p>Email: <strong>info@campusnews.ucan.edu</strong> ou WhatsApp: <strong>+244 923 000 000</strong>. Respondemos dentro de 24 horas úteis.</p>
+                    </details>
+
+                    <details class="item-faq">
+                        <summary>📅 Quais são os prazos?</summary>
+                        <p>Os prazos variam conforme o evento ou atividade. Consulte sempre os detalhes na página específica do evento ou notícia.</p>
+                    </details>
+
+                    <details class="item-faq">
+                        <summary>💡 Posso sugerir notícias?</summary>
+                        <p>Sim! Envie sugestões para <strong>redacao@campusnews.ucan.edu</strong>. Valorizamos a participação da comunidade.</p>
+                    </details>
+
+                    <details class="item-faq">
+                        <summary>🔒 Como funciona a política de privacidade?</summary>
+                        <p>Os seus dados são protegidos conforme a nossa Política de Privacidade. Não partilhamos informações com terceiros sem autorização.</p>
+                    </details>
+
+                </section>
+
+                <!-- Barra lateral -->
+                <aside class="barra-lateral">
+
+                    <div class="caixa">
+                        <h3>🔍 Pesquisar</h3>
+                        <input type="text" id="pesquisaFaq" placeholder="Pesquisar perguntas...">
+                    </div>
+
+                    <div class="caixa">
+                        <h3>📂 Categorias</h3>
+                        <ul>
+                            <li><a href="#" data-categoria="todos" class="categoria-ativa">📌 Todos</a></li>
+                            <li><a href="#" data-categoria="publicacao">📝 Publicação</a></li>
+                            <li><a href="#" data-categoria="eventos">🎉 Eventos</a></li>
+                            <li><a href="#" data-categoria="contacto">📧 Contacto</a></li>
+                            <li><a href="#" data-categoria="prazos">📅 Prazos</a></li>
+                            <li><a href="#" data-categoria="privacidade">🔒 Privacidade</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contacto rapido -->
+                    <div class="caixa contacto-rapido-sidebar">
+                        <h3>📞 Precisa de ajuda?</h3>
+                        <p>Fale connosco directamente.</p>
+                        <a href="Contactos.html" class="botao">Falar connosco →</a>
+                    </div>
+
+                </aside>
+
+            </div>
+        </main>
+
+        <!-- Newsletter -->
+        <section class="newsletter-principal">
+            <div class="container newsletter-conteudo">
+                <p>📧 Receba as nossas notícias</p>
+                <input type="email" placeholder="O seu email (@gmail.com)" id="emailNewsletter">
+                <button id="botaoSubscrever">Subscrever</button>
+            </div>
+        </section>
+
+        <!-- Rodape -->
+        <footer class="rodape">
+            <div class="container rodape-conteudo">
+                <div class="logo-rodape">
+                    <img src="../img/logo_UCAN.jpg" alt="Logo UCAN">
+                    <span>UCAN</span>
+                </div>
+
+                <div class="links-rodape">
+                    <a href="Faq.html">❓ FAQ</a>
+                    <a href="Politica.html">📜 Política</a>
+                    <a href="Termos.html">⚖️ Termos</a>
+                    <a href="MapaSite.html">🗺️ Mapa do Site</a>
+                    <a href="Contactos.html">📞 Contactos</a>
+                </div>
+
+                <div class="redes-sociais">
+                    <a href="https://web.facebook.com/"><img src="../img/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/univ_catolica_de_angola/"><img src="../img/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/feed/"><img src="../img/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+            <div class="rodape-base">
+                <p>&copy; 2026 Campus News UCAN. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+    <button class="botao-topo" id="botaoTopo">↑</button>
+
+    <script src="../js/faq.js"></script>
+</body>
+</html>
